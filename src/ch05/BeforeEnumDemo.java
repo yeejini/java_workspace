@@ -7,23 +7,6 @@ public class BeforeEnumDemo {
 		System.out.println(Gender.MALE);
 		System.out.println(Gender.FEMALE);
 
-//		System.out.println(Num.ONE);
-//		System.out.println(Num.TWO);
-
-		People p = new People();
-		p.age = 21;
-		// 값을 부여하는게 아닌 Gender타입의
-		p.gender = Gender.MALE;
-
-//		if (p.age >= 18) {
-//			System.out.println("성인");
-//
-//		}
-//		// 개발자 입장에서는 Male이 1인지 2인지 알지 않아도 된다
-//		if (p.gender == Gender.MALE) {
-//			System.out.println("남성");
-//		}
-
 	}
 
 }
@@ -37,6 +20,7 @@ class People {
 
 enum Gender {
 	// 상수 값
+	// 상수 값을 생성할 때, 객체 생성이 됨
 	MALE("남성"), FEMALE("여성");
 
 	// 필드

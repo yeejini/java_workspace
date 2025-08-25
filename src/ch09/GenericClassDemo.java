@@ -48,12 +48,24 @@ class Beverage {
 }
 
 class Beer extends Beverage {
+
+	@Override
+	public String toString() {
+		return "Beer 입니다";
+	}
+
 	void drink() {
 		System.out.println("맥주를 마신다.");
 	}
 }
 
 class Boricha extends Beverage {
+
+	@Override
+	public String toString() {
+		return "Boricha 입니다";
+	}
+
 	void notdrink() {
 		System.out.println("보리차를 마신다.");
 	}
